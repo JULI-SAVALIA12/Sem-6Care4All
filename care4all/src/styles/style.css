@@ -1,0 +1,102 @@
+/* src/styles.scss */
+.main-text {
+  color: #0e2a4e;
+}
+
+.neutral-text {
+  color: white;
+}
+
+.accent-text {
+  color: hsl(162, 47%, 44%);
+}
+
+.accent-bg {
+  background-color: hsl(162, 47%, 44%);
+}
+
+.accent2-text {
+  color: #2c8469;
+}
+
+.accent2-bg {
+  background-color: #2c8469;
+}
+
+.main-bg {
+  background-color: #e4e6f0;
+}
+
+.neutral-bg {
+  background-color: white;
+}
+
+.primary-bg {
+  background-color: #0e2a4e !important;
+}
+
+.primary-text {
+  color: #0e2a4e !important;
+}
+
+.primarylight-bg {
+  background-color: rgba(116, 160, 207, 0.9019607843) !important;
+}
+
+.btns {
+  transition: all 0.5s;
+}
+
+.btns:hover {
+  color: white !important;
+  background-color: hsl(162, 47%, 44%);
+}
+
+ul, ol {
+  list-style: none !important;
+}
+
+a {
+  color: black !important;
+  text-decoration: none !important;
+}
+
+.btn-main {
+  background-color: hsl(162, 47%, 44%);
+  color: white !important;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+@keyframes zoom-fade {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+.zoom-fade {
+  animation: zoom-fade 7s linear infinite;
+}
+
+@keyframes translateY {
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.skw {
+  animation: translateY 2s linear infinite;
+}
+
+@keyframes translatex {
+  50% {
+    transform: translate(-40px);
+  }
+}
+.translatex {
+  animation: translatex 8s linear infinite;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,113 @@
+/* src/styles.scss */
+$theme-background: #e4e6f0; // For general background or theme highlights
+$accent: hsl(162, 47%, 44%);          // For buttons, links, or accents
+$accent2: #2c8469;          // For buttons, links, or accents
+$primary: #0e2a4e;         // For primary text or key elements
+$primarylight: #74a0cfe6; 
+$neutral: white;           // For neutral backgrounds or text
+
+
+.main-text{
+    color: $primary;
+}
+.neutral-text{
+    color: $neutral;
+}
+.accent-text{
+    color: $accent;
+}
+.accent-bg{
+    background-color: $accent;
+}
+.accent2-text{
+    color: $accent2;
+}
+.accent2-bg{
+    background-color: $accent2;
+}
+.main-bg{
+    background-color: $theme-background;
+}
+.neutral-bg{
+    background-color: $neutral;
+}
+.primary-bg{
+    background-color: $primary!important;
+}
+.primary-text{
+    color: $primary!important;
+}
+.primarylight-bg{
+    background-color: $primarylight!important;
+}
+.btns{
+    transition: all 0.5s;
+}
+.btns:hover{
+    color: $neutral!important;
+    background-color: $accent   ;
+}
+// utility
+ul,ol{
+    list-style: none!important;
+}
+a{
+    color: black!important;
+    text-decoration: none!important;
+}
+.btn-main{
+    background-color: $accent;
+    color: $neutral!important;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.svgHoverChild1:hover{
+    transition: all 0.5s;
+    .svgHoverChild2{
+        transition: all 0.5s;
+        background-color: $accent!important;
+    svg{
+        color: $neutral!important;
+    }
+    }
+}
+
+//keyframes
+@keyframes zoom-fade {
+    0% {
+        transform: scale(0.9);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.9);
+    }
+}
+
+.zoom-fade{
+    animation: zoom-fade 7s linear infinite;
+}
+
+
+@keyframes translateY {
+    50%{
+        transform: translateY(-10px);
+    }
+}
+
+.skw{
+    animation: translateY 2s linear infinite;
+}
+
+
+@keyframes translatex {
+    50% {
+        transform: translate(-40px);
+    }
+}
+
+.translatex{
+    animation: translatex 8s linear infinite;
+}
