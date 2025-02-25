@@ -25,6 +25,8 @@ import HireSeniorCareForm from './components/Seniorcareform/HireSeniorCareForm'
 import HirePetCare from './components/PetcareFindJob/HirePetCare'
 import HireHousekeeping from './components/HousekeepingFindJob/HireHousekeeping'
 import HirePersonalTutor from './components/PersonalTutorFindJob/HirePersonalTutor'
+import ProfileFormFindCare from './components/Profile/Findcare/ProfileFormFindCare'
+import ProfileFormFindJob from './components/Profile/Findjob/ProfileFormFindJob'
 
 const App = () => {
   return (
@@ -55,6 +57,8 @@ const App = () => {
         <Route path="/HireHousekeeping" element={<HireHousekeeping/>}/>
         <Route path="/HirePersonalTutor" element={<HirePersonalTutor/>}/>
         <Route path="/HirePetCare" element={<HirePetCare/>}/>
+        <Route path="/ProfileFormFindCare" element={<ProfileFormFindCare/>}/>
+        <Route path="/ProfileFormFindJob" element={<ProfileFormFindJob/>}/>
         
       </Routes>
     </BrowserRouter>
